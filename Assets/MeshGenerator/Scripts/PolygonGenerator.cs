@@ -8,6 +8,10 @@ public class PolygonGenerator : MonoBehaviour
     [Space]
     [SerializeField][Range(1,360)] int sides;
     [SerializeField] float radius;
+    [Space]
+    [Header("Physics")]
+    [SerializeField] PhysicsMaterial2D lowFriction;
+    [SerializeField] PhysicsMaterial2D hightFriction;
 
     Mesh mesh;
     List<Vector3> vertices;
@@ -59,7 +63,8 @@ public class PolygonGenerator : MonoBehaviour
         // Set UV
         for (int i = 0; i < vertices.Count; i++)
         {
-            UVs.Add(vertices[i]);
+            Vector2 uvCoordinate = (VectorUtility.FromV3ToV2(vertices[i]) / 2) + (Vector2.one / 2);
+            UVs.Add(uvCoordinate);
         }
         mesh.SetUVs(0, UVs);
 
@@ -126,6 +131,7 @@ public class PolygonGenerator : MonoBehaviour
         bones[i].localPosition = vertices[i];
         bones[i].gameObject.AddComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         bones[i].gameObject.AddComponent<CircleCollider2D>().radius = 0.1f;
+        bones[i].gameObject.AddComponent<Jump>();
         bindPoses[i] = bones[i].worldToLocalMatrix * transform.localToWorldMatrix;
     }
 
@@ -137,6 +143,7 @@ public class PolygonGenerator : MonoBehaviour
         bones[i].localPosition = vertices[i];
         bones[i].gameObject.AddComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         bones[i].gameObject.AddComponent<CircleCollider2D>().radius = 0.1f;
+        bones[i].gameObject.AddComponent<Jump>();
         bindPoses[i] = bones[i].worldToLocalMatrix * transform.localToWorldMatrix;
     }
 }
