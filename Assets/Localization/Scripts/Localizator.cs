@@ -8,6 +8,8 @@ public static class Localizator
 {
     static LocalizationCollection collections;
     static LanguageData currentLanguage;
+    public static CultureInfo currentCultureInfo;
+    static Dictionary<string, string> datas;
 
     static Localizator()
     {
@@ -17,22 +19,73 @@ public static class Localizator
 
     private static void SetLanguage()
     {
-        string customLanguage = PlayerPrefs.GetString("LANGUAGE", null);
-
-        if (!string.IsNullOrEmpty(customLanguage))
+#if UNITY_EDITOR
+        if (collections.forcedLanguage != null)
+            currentLanguage = collections.forcedLanguage;
+        else
+#endif
         {
-            // ....
-            return;
+            string customLanguage = PlayerPrefs.GetString("LANGUAGE", null);
+            if (!string.IsNullOrEmpty(customLanguage))
+            {
+                // ....
+                return;
+            }
+
+            CultureInfo ci = CultureInfo.InstalledUICulture;
+
+            currentLanguage = null;
+            foreach (var lang in collections.languages)
+            {
+                if (lang.iso == ci.TwoLetterISOLanguageName) currentLanguage = lang;
+            }
+
+            if (currentLanguage == null) currentLanguage = collections.fallback;
         }
 
-        CultureInfo ci = CultureInfo.InstalledUICulture;
-
-        currentLanguage = null;
-        foreach (var lang in collections.languages)
+        datas = new Dictionary<string, string>();
+        for (int i = 0; i < currentLanguage.keys.Length; i++)
         {
-            if (lang.iso == ci.TwoLetterISOLanguageName) currentLanguage = lang;
+            datas.Add(currentLanguage.keys[i], currentLanguage.values[i]);
+        }
+        currentCultureInfo = new CultureInfo(currentLanguage.languageCode);
+    }
+
+    public static string Localized(this string key, params object[] values)
+    {
+        try
+        {
+            return string.Format(currentCultureInfo, key.Localized(), values);
+        }
+        catch (System.Exception e)
+        {
+#if UNITY_EDITOR || DEBUG
+            Debug.LogErrorFormat("Error parsing format for key {0} in language {1}, see next Error", key, currentLanguage.name);
+            Debug.LogException(e);
+            return string.Format("ERROR_{0}", key);
+#else
+            return "";
+#endif
+        }
+    }
+
+    public static string Localized(this string key)
+    {
+        return Localize(key);
+    }
+
+    public static string Localize(string key)
+    {
+        if (!datas.ContainsKey(key))
+        {
+#if UNITY_EDITOR || DEBUG
+            Debug.LogErrorFormat("");
+            return string.Format("UNDEF_{0}", key);
+#else
+            return "";
+#endif
         }
 
-        if (currentLanguage == null) currentLanguage = collections.fallback;
+        return datas[key];
     }
 }

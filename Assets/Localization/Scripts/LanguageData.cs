@@ -6,5 +6,6 @@ public class LanguageData : ScriptableObject
 {
     public string iso;
     public string languageCode;
-    public Dictionary<string, string> values;
+    public string[] values;
+    public string[] keys;
 }

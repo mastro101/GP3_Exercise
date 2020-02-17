@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20f73fdf61ea2f44faf951ea07ece52a, type: 3}
-  m_Name: New Localization Collection
+  m_Name: LocalizationCollection
   m_EditorClassIdentifier: 
   languages:
   - {fileID: 11400000, guid: cb1d79872f69e234282d9bfec7c07cec, type: 2}
-  - {fileID: 11400000, guid: ad52eac22e2b4cc479f7b1452d494c7c, type: 2}
+  - {fileID: 11400000, guid: 6f83fb6281e06c44dbf564d4dcb1b68c, type: 2}
   - {fileID: 11400000, guid: 191e85ee9d6fbe44fbe962a41b14404a, type: 2}
   - {fileID: 11400000, guid: 097c4c8d93e863b4e92e42c81a70cbef, type: 2}
   - {fileID: 11400000, guid: 95229e52d637ab34b969c04e2284ffcc, type: 2}
@@ -23,4 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 67acd17b6bd613347881959d3d659f99, type: 2}
   - {fileID: 11400000, guid: 11bd11b3128503843b8e39173f5253fa, type: 2}
   - {fileID: 11400000, guid: c5f17d8c33697c049a9e84928e64c0e2, type: 2}
-  fallback: {fileID: 0}
+  fallback: {fileID: 11400000, guid: 1fa3d0b81a723ef47a9b700e3f287358, type: 2}
+  forcedLanguage: {fileID: 11400000, guid: 1fa3d0b81a723ef47a9b700e3f287358, type: 2}

@@ -10,130 +10,131 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 721fa190792d4114b8824c3ed020a15f, type: 3}
-  m_Name: zh-CN
+  m_Name: en-GB
   m_EditorClassIdentifier: 
-  iso: zh
-  languageCode: zh-CN
+  iso: en
+  languageCode: en-GB
   values:
-  - "\u597D\u7684"
-  - "\u786E\u8BA4"
-  - "\u53D6\u6D88"
-  - "\u8FD4\u56DE"
-  - "\u5F00\u59CB"
-  - "\u9009\u62E9\u6B66\u5668"
-  - "\u66F4\u6362\u6B66\u5668"
-  - "\u5173\u95ED"
-  - "\u91CD\u8BD5"
-  - "\u4E3B\u83DC\u5355"
-  - "\u91CD\u751F"
-  - "\u7269\u54C1\u680F"
-  - "\u7A7A"
-  - "\u6B66\u5668"
-  - "\u6682\u505C"
-  - "\u65B0\u6E38\u620F"
-  - "\u56FE\u4F8B"
-  - "\u96BE\u5EA6\uFF1A\u666E\u901A"
-  - "\u96BE\u5EA6\uFF1A\u5669\u68A6"
-  - "\u8F7D\u5165\u6E38\u620F"
-  - "\u9009\u9879"
-  - "\u5236\u4F5C\u4EBA\u5458"
-  - "\u65B0\u6E38\u620F"
-  - "\u8F7D\u5165\u6E38\u620F"
-  - "\u9009\u9879"
-  - "\u753B\u9762\u9009\u9879"
-  - "\u5FAA\u73AF"
-  - "\u9000\u51FA"
-  - "\u9000\u51FA\u81F3\u684C\u9762"
-  - "\u786E\u5B9A\u8981\u9000\u51FA\u6E38\u620F\u5417\uFF1F"
-  - "\u97F3\u91CF"
-  - "\u5168\u5C4F"
-  - "\u8D28\u91CF"
-  - "\u5206\u8FA8\u7387"
-  - "\u9AD8"
-  - "\u666E\u901A"
-  - "\u4F4E"
-  - "\u753B\u9762"
-  - "\u58F0\u97F3"
-  - "\u63A7\u5236"
-  - "\u65B0\u6E38\u620F"
-  - "\u9009\u62E9\u680F\u4F4D\u8F7D\u5165"
-  - "\u662F"
-  - "\u5426"
-  - "\u662F\u5426\u8981\u8986\u76D6\u9009\u5B9A\u680F\u4F4D\u6570\u636E\uFF1F\u6240\u6709\u8FDB\u5EA6\u5C06\u4E22\u5931"
-  - "\u5F00"
-  - "\u5173"
-  - "\u8C03\u8282\u4EAE\u5EA6"
-  - "\u4EAE\u5EA6"
-  - "\u4EAE\u5EA6"
-  - "\u5BF9\u6BD4\u5EA6"
-  - "\u8BED\u8A00"
-  - "\u9009\u62E9\u8BED\u8A00"
-  - "\u82F1\u8BED"
-  - "\u610F\u5927\u5229\u8BED"
-  - "\u5FB7\u8BED"
-  - "\u6CD5\u8BED"
-  - "\u897F\u73ED\u7259\u8BED"
-  - "\u4FC4\u8BED"
-  - "\u8461\u8404\u7259\u8BED"
-  - "\u4E2D\u6587"
-  - "\u5308\u7259\u5229"
-  - "\u6E38\u73A9\u65F6\u95F4\uFF1A"
-  - "\u9009\u62E9\u680F\u4F4D\u521B\u5EFA\u65B0\u6E38\u620F"
-  - "\u8DF3\u8FC7\u5F00\u573A\u52A8\u753B"
-  - "\u56DE\u5230\u6E38\u620F"
-  - "\u56DE\u5408"
-  - "\u4FDD\u5B58"
-  - "\u5E94\u7528"
-  - "\u64A4\u9500"
-  - "\u5206\u8FA8\u7387"
-  - "\u5168\u5C4F"
-  - "\u662F"
-  - "\u5426"
-  - "\u6863\u6848"
-  - "\u4F4E"
-  - "\u4E2D"
-  - "\u9AD8"
-  - "\u975E\u5E38\u9AD8"
-  - "\u6781\u9AD8"
-  - "\u81EA\u5B9A\u4E49"
-  - "\u603B\u4F53\u8D28\u91CF"
-  - "\u4F53\u79EF\u5149"
-  - "\u5F00\u542F"
-  - "\u5173\u95ED"
-  - "\u52A8\u6001\u6A21\u7CCA"
-  - "\u666F\u6DF1"
-  - "\u540E\u671F\u6548\u679C"
-  - "\u9AD8"
-  - "\u4E2D"
-  - "\u4F4E"
-  - "\u6297\u952F\u9F7F"
-  - "\u9634\u5F71"
-  - "\u906E\u6321"
-  - "\u6CDB\u5149"
-  - "\u5C4F\u5E55\u53CD\u5C04"
-  - "\u6750\u8D28\u8D28\u91CF"
-  - "\u5782\u76F4\u540C\u6B65"
-  - "\u786E\u8BA4\u89C6\u9891\u53D8\u66F4\uFF1F"
-  - "\u9759\u97F3"
-  - "\u4E3B\u97F3\u91CF"
-  - "\u97F3\u4E50"
-  - "\u97F3\u6548"
-  - "\u53CD\u8F6CY\u8F74"
-  - "\u7981\u7528\u624B\u67C4\u632F\u52A8"
-  - "\u96BE\u5EA6"
-  - "\u7B80\u5355"
-  - "\u666E\u901A"
-  - "\u56F0\u96BE"
-  - "\u5FEB\u901F\u6218\u6597"
-  - "\u6446\u5934"
-  - "\u6E38\u620F\u6A21\u5F0F"
-  - "\u65E0\u5C3D\u6A21\u5F0F"
-  - "\u6545\u4E8B\u6A21\u5F0F"
-  - "\u89C2\u5BDF\u7075\u654F\u5EA6\uFF08\u9F20\u6807\uFF09"
-  - "\u89C2\u5BDF\u7075\u654F\u5EA6\uFF08\u624B\u67C4\uFF09"
-  - "\u8F7D\u5165\u4E2D"
-  - "\u6BDB\u523A\u6548\u5E94"
-  - "\u6BDB\u523A\u6548\u5E94"
+  - OK
+  - CONFIRM
+  - CANCEL
+  - BACK
+  - START
+  - SELECT WEAPON
+  - SWITCH WEAPON
+  - CLOSE
+  - RETRY
+  - MAIN MENU
+  - RESPAWN
+  - INVENTORY
+  - EMPTY
+  - WEAPON
+  - PAUSE
+  - NEW GAME
+  - LEGEND
+  - 'Difficulty: Normal'
+  - 'Difficulty: Nightmare'
+  - LOAD GAME
+  - OPTIONS
+  - CREDITS
+  - NEW GAME
+  - LOAD GAME
+  - OPTIONS
+  - VIDEO OPTIONS
+  - AUDIO OPTIONS
+  - QUIT
+  - QUIT TO DESKTOP
+  - Do you want to quit the game?
+  - VOLUME
+  - FULLSCREEN
+  - QUALITY
+  - RESOLUTION
+  - HIGH
+  - NORMAL
+  - LOW
+  - VIDEO
+  - AUDIO
+  - CONTROLS
+  - NEW GAME
+  - Select the slot to load
+  - Yes
+  - No
+  - Do you want to overwrite the selected slot data ? All the progression will be
+    lost
+  - ON
+  - OFF
+  - ADJUST BRIGHTNESS
+  - BRIGHTNESS
+  - Brightness
+  - Contrast
+  - LANGUAGE
+  - SELECT LANGUAGE
+  - ENGLISH
+  - ITALIAN
+  - GERMAN
+  - FRENCH
+  - SPANISH
+  - RUSSIAN
+  - PORTUGUESE
+  - CHINESE
+  - HUNGARIAN
+  - 'Playing time:'
+  - Select the slot to create a new game
+  - Skip Intro
+  - RESUME
+  - Cycle
+  - SAVE
+  - APPLY
+  - REVERT
+  - RESOLUTION
+  - FULLSCREEN
+  - YES
+  - NO
+  - PROFILE
+  - LOW
+  - MEDIUM
+  - HIGH
+  - VERY HIGH
+  - ULTRA
+  - CUSTOM
+  - GLOBAL QUALITY
+  - VOLUMETRIC LIGHT
+  - ON
+  - OFF
+  - MOTION BLUR
+  - DEPTH OF FIELD
+  - POST EFFECT
+  - HIGH
+  - MEDIUM
+  - LOW
+  - ANTIALIASING
+  - SHADOW
+  - AMBIENT OCCLUSION
+  - BLOOM
+  - SCREEN REFLECTION
+  - TEXTURE QUALITY
+  - VERTICAL SYNC
+  - Confirm video changes?
+  - MUTE
+  - MASTER VOLUME
+  - MUSIC
+  - SFX
+  - INVERT Y AXIS
+  - DISABLE PAD VIBRATION
+  - DIFFICULTY
+  - EASY
+  - NORMAL
+  - HARD
+  - FAST COMBAT
+  - HEADBOBBING
+  - GAME MODE
+  - ENDLESS MODE
+  - STORY MODE
+  - LOOK SENSITIVITY (MOUSE)
+  - LOOK SENSITIVITY (CONTROLLER)
+  - LOADING
+  - GLITCH EFFECT
+  - You earn {0:N0} sold
   keys:
   - '#BTN_OK'
   - '#BTN_CONFIRM'
